@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.page {
+  margin: 20px 200px;
+  min-height: 100vh;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+  input {
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 30px;
+    border: 1px solid rgb(116, 109, 109);
+    padding: 5px;
+    border-radius: 6px;
+  }
+  .pokemonList{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .pokemon {
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(121, 112, 112);
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+    text-align: center;
+    img{
+      object-fit: cover;
+      height: 70%;
+      width: 70%;
+    }
+  }
+  ul{
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    li {
+      list-style: none;
+      padding: 10px;
+      :hover {
+        background-color: aqua;
+      }
+    }
+  }
+}
+
